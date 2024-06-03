@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section {
+            width: 50%;
+            background-color: #ddd; /* Placeholder for background color */
+            background-image: url('image.png'); /*You can insert your image as a background here */
+        }
+
+        .form-section {
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup-section, .login-section {
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #80372a; /* Bootstrap primary color */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1b4c81d7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            
+            <!-- You can insert an <img> tag or use a background image -->
+        </div>
+        <div class="form-section">
+            <div class="signup-section">
+                <p>Don't have an account? Sign up</p>
+                <button onclick="location.href='user_signup.php'">User Sign Up</button>
+                <button onclick="location.href='hospital_signup.php'">Hospital Sign Up</button>
+            </div>
+            <div class="login-section">
+                <p>Already have an account? Log In</p>
+                <button onclick="location.href='login.php'">Log In</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
